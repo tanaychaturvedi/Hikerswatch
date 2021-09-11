@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/eq" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="324dp"
+        android:layout_height="72dp"
+        android:text="Hiker's Watch"
+        android:textColor="#000000"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.153" />
+
+    <TextView
+        android:id="@+id/longTextView"
+        android:layout_width="319dp"
+        android:layout_height="37dp"
+        android:text="Longitude : 40.2666"
+        android:textColor="#322E2E"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.557" />
+
+    <TextView
+        android:id="@+id/latTextView"
+        android:layout_width="325dp"
+        android:layout_height="33dp"
+        android:text="Latitude : 40.2666"
+        android:textColor="#4A4141"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.617" />
+
+    <TextView
+        android:id="@+id/accTextView"
+        android:layout_width="245dp"
+        android:layout_height="32dp"
+        android:text="Accuracy=40"
+        android:textColor="#4A4141"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.678" />
+
+    <TextView
+        android:id="@+id/altTextView"
+        android:layout_width="245dp"
+        android:layout_height="32dp"
+        android:text="Altitude=50"
+        android:textColor="#4A4141"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.739" />
+
+    <TextView
+        android:id="@+id/addressTextView"
+        android:layout_width="248dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="5dp"
+        android:text="Address:\n Street 20"
+        android:textColor="#292222"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/altTextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
